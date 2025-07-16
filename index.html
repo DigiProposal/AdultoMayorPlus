@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TherapyPlus - Propuesta de Cuidado para el Adulto Mayor</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Poppins and Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Custom Styles and Configuration for Tailwind -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'therapy-blue': '#007BFF',
+                        'therapy-orange': '#FD7E14',
+                        'therapy-light-gray': '#F8F9FA',
+                        'therapy-dark-gray': '#212529',
+                    },
+                    fontFamily: {
+                        'poppins': ['Poppins', 'sans-serif'],
+                        'inter': ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            color: #212529; /* therapy-dark-gray */
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Poppins', sans-serif;
+        }
+        .proposal-card {
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .proposal-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+        }
+        .cta-button {
+            transition: all 0.3s ease;
+        }
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+        }
+    </style>
+</head>
+<body class="bg-therapy-light-gray">
+
+    <div class="container mx-auto p-4 sm:p-6 md:p-8">
+        <!-- Header -->
+        <header class="text-center mb-10">
+            <img src="https://ik.imagekit.io/50wnllxkw/TherapyPlus%20Logo%20Final%20Sin%20Fondo%20(1)%20(1).png?updatedAt=1752014996549" alt="Logo de TherapyPlus" class="h-16 mx-auto mb-4">
+            <h1 class="text-3xl md:text-4xl font-bold text-therapy-dark-gray">Propuesta de Servicio</h1>
+            <p class="text-lg text-therapy-blue font-semibold">Cuidado Especializado para el Adulto Mayor</p>
+        </header>
+
+        <main class="max-w-4xl mx-auto bg-white rounded-xl shadow-2xl overflow-hidden">
+            
+            <!-- Section 1: Commitment -->
+            <section class="p-8">
+                <h2 class="text-2xl font-bold text-therapy-dark-gray mb-4">Nuestro Compromiso: Cuidado Profesional y Humano</h2>
+                <p class="text-gray-700 mb-6">
+                    En TherapyPlus, ofrecemos una solución de cuidado integral diseñada para garantizar la tranquilidad del paciente y su familia. Asignamos una <strong>cuidadora femenina profesional</strong>, altamente calificada en geriatría y comprometida con un trato afectivo, empático y respetuoso.
+                </p>
+                <div class="bg-therapy-blue text-white rounded-lg p-6 text-center">
+                    <h3 class="text-xl font-bold mb-2">Horario de Cobertura</h3>
+                    <div class="grid sm:grid-cols-2 gap-4">
+                        <div>
+                            <p class="text-lg font-semibold">Lunes a Viernes</p>
+                            <p class="text-2xl font-bold">7:00 AM - 5:00 PM</p>
+                        </div>
+                        <div class="sm:border-l border-white/50">
+                            <p class="text-lg font-semibold">Sábados</p>
+                            <p class="text-2xl font-bold">7:00 AM - 12:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section 2: Scope of Services -->
+            <section class="bg-therapy-light-gray p-8">
+                <h2 class="text-2xl font-bold text-therapy-dark-gray mb-6 text-center">Alcance de Nuestros Cuidados</h2>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <!-- Service Item -->
+                    <div class="proposal-card bg-white p-5 rounded-lg flex items-start space-x-4">
+                        <div class="flex-shrink-0 bg-therapy-orange text-white rounded-full h-10 w-10 flex items-center justify-center">✓</div>
+                        <div>
+                            <h4 class="font-bold text-therapy-dark-gray">Alimentación e Hidratación</h4>
+                            <p class="text-sm text-gray-600">Supervisión y asistencia para una nutrición balanceada y una hidratación adecuada.</p>
+                        </div>
+                    </div>
+                    <!-- Service Item -->
+                    <div class="proposal-card bg-white p-5 rounded-lg flex items-start space-x-4">
+                        <div class="flex-shrink-0 bg-therapy-orange text-white rounded-full h-10 w-10 flex items-center justify-center">✓</div>
+                        <div>
+                            <h4 class="font-bold text-therapy-dark-gray">Higiene Corporal</h4>
+                            <p class="text-sm text-gray-600">Asistencia completa en la higiene personal, preservando la dignidad y comodidad.</p>
+                        </div>
+                    </div>
+                    <!-- Service Item -->
+                    <div class="proposal-card bg-white p-5 rounded-lg flex items-start space-x-4">
+                        <div class="flex-shrink-0 bg-therapy-orange text-white rounded-full h-10 w-10 flex items-center justify-center">✓</div>
+                        <div>
+                            <h4 class="font-bold text-therapy-dark-gray">Prevención de Riesgos</h4>
+                            <p class="text-sm text-gray-600">Implementación de medidas para la prevención de caídas, golpes y accidentes.</p>
+                        </div>
+                    </div>
+                    <!-- Service Item -->
+                    <div class="proposal-card bg-white p-5 rounded-lg flex items-start space-x-4">
+                        <div class="flex-shrink-0 bg-therapy-orange text-white rounded-full h-10 w-10 flex items-center justify-center">✓</div>
+                        <div>
+                            <h4 class="font-bold text-therapy-dark-gray">Controles y Seguimiento</h4>
+                            <p class="text-sm text-gray-600">Monitoreo constante de signos vitales y coordinación de controles médicos.</p>
+                        </div>
+                    </div>
+                    <!-- Service Item -->
+                    <div class="proposal-card bg-white p-5 rounded-lg flex items-start space-x-4">
+                        <div class="flex-shrink-0 bg-therapy-orange text-white rounded-full h-10 w-10 flex items-center justify-center">✓</div>
+                        <div>
+                            <h4 class="font-bold text-therapy-dark-gray">Administración de Medicamentos</h4>
+                            <p class="text-sm text-gray-600">Gestión precisa y puntual de todos los medicamentos recetados y vacunas.</p>
+                        </div>
+                    </div>
+                    <!-- Service Item -->
+                    <div class="proposal-card bg-white p-5 rounded-lg flex items-start space-x-4">
+                        <div class="flex-shrink-0 bg-therapy-orange text-white rounded-full h-10 w-10 flex items-center justify-center">✓</div>
+                        <div>
+                            <h4 class="font-bold text-therapy-dark-gray">Actividad y Movilidad</h4>
+                            <p class="text-sm text-gray-600">Fomento de actividad física segura, incluyendo sesiones de fisioterapia a domicilio.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section 3: Investment and Next Steps -->
+            <section class="p-8 text-center">
+                <h2 class="text-2xl font-bold text-therapy-dark-gray mb-4">Inversión en Bienestar</h2>
+                <p class="text-gray-700 max-w-2xl mx-auto mb-6">
+                    Creemos que el cuidado excepcional es la mejor inversión en la calidad de vida de un ser querido. El valor de este completo plan de servicio es:
+                </p>
+                <div class="bg-therapy-light-gray p-6 rounded-lg inline-block mb-8">
+                    <p class="text-4xl font-bold text-therapy-blue">$4,000<span class="text-2xl font-semibold text-gray-600"> / mes</span></p>
+                </div>
+                <p class="text-gray-700 max-w-2xl mx-auto mb-8">
+                    Contáctanos para conversar sobre este plan y cómo podemos adaptarlo para ayudar a tu familiar.
+                </p>
+                <a href="http://wa.me/50763591155" target="_blank" class="cta-button inline-flex items-center justify-center bg-green-500 hover:bg-green-600 text-white font-bold text-lg py-3 px-10 rounded-full">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-3" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.886-.001 2.267.655 4.398 1.908 6.166l-1.138 4.162 4.273-1.12z"/></svg>
+                    <span>Contactar por WhatsApp</span>
+                </a>
+            </section>
+            
+            <!-- Footer -->
+            <footer class="bg-therapy-dark-gray text-white text-center p-6">
+                <p class="font-semibold">TherapyPlus | Bienestar que llega a tu puerta.</p>
+                <p class="text-sm text-gray-300 mt-1">contacto@therapyplushealth.com | Tel: +507 6359-1155</p>
+            </footer>
+
+        </main>
+    </div>
+
+</body>
+</html>
